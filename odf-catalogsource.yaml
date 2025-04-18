@@ -1,0 +1,9 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: rtalur-odf-catalogsource
+  namespace: openshift-marketplace
+spec:
+  displayName: OpenShift Data Foundation
+  image: quay.io/rhceph-dev/ocs-registry:4.19.0-43.konflux
+  sourceType: grpc
